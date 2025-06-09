@@ -54,8 +54,27 @@
     },
     {
         "id": 4,
+        "title": "Big & Small Haritası",
+        "description": "Minecrafttın en büyük harita yarışmasında crafte takımından egemen ve minyusla beraber 3 günde yaptığımız ve captainsparklez'ın paylaştığı harita.",
+        "image": "assets/projects/bigsmall.png",
+        "categories": ["Datapack","Resource Pack","Harita"],
+        "tags": ["Harita", "Eğlence", "Animasyon", "Sinematik","Youtube","Yarışma"],
+        "downloadLink": "https://drive.google.com/drive/folders/1Idf39cLdQI8UBNl7AwAbOsoxvaElQHYK",
+        "videoLink": "https://youtu.be/5S9Vogb_Dvs?si=M23jTjodXFJjdO1-",
+        "details": "Global bir takım olan Yeggs'in düzenlediği minecraftın en büyük harita yapma yarışmasında 3 günde yaptığımız eğlence ve mizah odaklı harita. Yarışmada herhangi bir mod ya da eklenti kullanmak yasak sadece datapack ve resource pack kullanıldı. Minecraft'ın efsane youtuberlarından CaptainSparklez' da yayında haritamızı oynayıp kanalında paylaştı.",
+        "version": "1.21.5",
+        "features": [
+            "Eğlenceli",
+            "Komik",
+            "Yaratıcı",
+            "Tek Oyunculu",
+            "Etkileyici"
+        ]
+    },
+    {
+        "id": 5,
         "title": "Yakında",
-        "description": "Site şu an yapım aşamasında, yakında tüm projelerim eklenecek..",
+        "description": "Site şu an yapım aşamasında, yakında tüm projelerim eklenecek ve mobil uyumlu hale getirilecek..",
         "categories": ["Araç"],
         "tags": ["Yakında", "Test"]
     }
