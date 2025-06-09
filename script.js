@@ -68,13 +68,19 @@ let categoriesData = [];
 
 // Load all data on page load
 document.addEventListener('DOMContentLoaded', async () => {
+    console.log('DOM content loaded, starting initialization...');
+    
     await loadData();
+    
+    console.log('Rendering components...');
     renderOrganizations();
     renderSocialLinks();
     renderCategories();
     renderProjects();
     initializeParticles();
     initializeAnimations();
+    
+    console.log('Initialization complete');
     
     // Event delegation for category buttons
     document.addEventListener('click', (event) => {
@@ -88,17 +94,33 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load data from JSON files
 async function loadData() {
     try {
+        console.log('Starting to load JSON data...');
+        
         const [orgsResponse, projectsResponse, socialResponse, categoriesResponse] = await Promise.all([
-            const timestamp = new Date().getTime(); const cacheBuster = \?v=\\; fetch(\./data/organizations.json\\),
-            fetch(\./data/projects.json\\),
-            fetch(\./data/social-links.json\\),
-            fetch(\./data/categories.json\\)
+            fetch('./data/organizations.json'),
+            fetch('./data/projects.json'),
+            fetch('./data/social-links.json'),
+            fetch('./data/categories.json')
         ]);
+
+        console.log('Fetch responses received:', {
+            orgs: orgsResponse.status,
+            projects: projectsResponse.status,
+            social: socialResponse.status,
+            categories: categoriesResponse.status
+        });
 
         organizationsData = await orgsResponse.json();
         projectsData = await projectsResponse.json();
         socialLinksData = await socialResponse.json();
         categoriesData = await categoriesResponse.json();
+        
+        console.log('Data loaded successfully:', {
+            organizations: organizationsData.length,
+            projects: projectsData.length,
+            socialLinks: socialLinksData.length,
+            categories: categoriesData.length
+        });
     } catch (error) {
         console.error('Error loading data:', error);
         // Use fallback data if JSON files fail to load
@@ -127,8 +149,12 @@ function loadFallbackData() {
 
 // Render Organizations
 function renderOrganizations() {
+    console.log('Rendering organizations...', organizationsData);
     const grid = document.getElementById('organizationsGrid');
-    if (!grid) return;
+    if (!grid) {
+        console.error('Organizations grid element not found');
+        return;
+    }
 
     grid.innerHTML = organizationsData.map(org => `
         <div class="organization-card ${!org.active ? 'inactive' : ''}">
@@ -138,6 +164,7 @@ function renderOrganizations() {
             <p class="org-detail">${org.detail}</p>
         </div>
     `).join('');
+    console.log('Organizations rendered successfully');
 }
 
 // Render Social Links
@@ -155,16 +182,22 @@ function renderSocialLinks() {
 
 // Render Categories
 function renderCategories() {
+    console.log('Rendering categories...', categoriesData);
     const container = document.getElementById('categoryButtons');
-    if (!container) return;
+    if (!container) {
+        console.error('Category buttons container not found');
+        return;
+    }
 
-    // Only add categories from JSON (HTML already has "Tümü" button)
+    // Only add categories from JSON (HTML already has "TÃ¼mÃ¼" button)
     container.innerHTML = categoriesData.map(category => `
         <button class="category-btn" data-category="${category.name}">
             <i class="${category.icon}"></i>
             ${category.name}
         </button>
     `).join('');
+    
+    console.log('Categories rendered successfully');
 
     // Event listeners will be handled by event delegation in DOMContentLoaded
 }
@@ -215,9 +248,9 @@ function renderProjects() {
     
     if (!selectedCategories.includes('all')) {
         filteredProjects = projectsData.filter(project => {
-            // Güvenli kategori kontrolü
+            // Gï¿½venli kategori kontrolï¿½
             if (!project || !project.categories || !Array.isArray(project.categories)) {
-                return false; // Kategorisi olmayan projeleri gösterme
+                return false; // Kategorisi olmayan projeleri gï¿½sterme
             }
             return project.categories.some(cat => selectedCategories.includes(cat));
         });
@@ -238,7 +271,7 @@ function renderProjects() {
                     <div class="project-links">
                         ${project.downloadLink ? `
                             <a href="${project.downloadLink}" class="project-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
-                                <i class="fas fa-download"></i> Ýndir
+                                <i class="fas fa-download"></i> ï¿½ndir
                             </a>
                         ` : ''}
                         ${project.videoLink ? `
@@ -273,13 +306,13 @@ function openProjectModal(projectId) {
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
             <div>
                 ${(project.details || project.description) ? `
-                    <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Proje Detaylarý</h3>
+                    <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Proje Detaylarï¿½</h3>
                     <p style="color: var(--text-secondary); line-height: 1.6;">${project.details || project.description}</p>
                 ` : ''}
                 
                 ${project.features && project.features.length > 0 ? `
                     <div style="margin-top: 1rem;">
-                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Özellikler</h4>
+                        <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">ï¿½zellikler</h4>
                         <ul style="color: var(--text-secondary); margin-left: 1rem;">
                             ${project.features.map(feature => `<li>${feature}</li>`).join('')}
                         </ul>
@@ -290,7 +323,7 @@ function openProjectModal(projectId) {
                 ${(project.version || (project.downloads !== undefined && project.downloads !== null) || (project.categories && project.categories.length > 0) || (project.tags && project.tags.length > 0)) ? `
                     <h3 style="color: var(--text-primary); margin-bottom: 0.5rem;">Bilgiler</h3>
                     ${project.version ? `<p style="color: var(--text-secondary); margin-bottom: 0.5rem;"><strong>Versiyon:</strong> ${project.version}</p>` : ''}
-                    ${(project.downloads !== undefined && project.downloads !== null) ? `<p style="color: var(--text-secondary); margin-bottom: 1rem;"><strong>Ýndirme:</strong> ${project.downloads.toLocaleString()}</p>` : ''}
+                    ${(project.downloads !== undefined && project.downloads !== null) ? `<p style="color: var(--text-secondary); margin-bottom: 1rem;"><strong>ï¿½ndirme:</strong> ${project.downloads.toLocaleString()}</p>` : ''}
                     
                     ${project.categories && project.categories.length > 0 ? `
                         <div style="margin-bottom: 1rem;">
@@ -317,12 +350,12 @@ function openProjectModal(projectId) {
             <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 ${project.downloadLink ? `
                     <a href="${project.downloadLink}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-download"></i> Projeyi Ýndir
+                        <i class="fas fa-download"></i> Projeyi ï¿½ndir
                     </a>
                 ` : ''}
                 ${project.videoLink ? `
                     <a href="${ensureAbsoluteUrl(project.videoLink)}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-                        <i class="fas fa-external-link-alt"></i> Video'yu Aç
+                        <i class="fas fa-external-link-alt"></i> Video'yu Aï¿½
                     </a>
                 ` : ''}
             </div>
@@ -344,7 +377,7 @@ function generateVideoEmbed(videoLink) {
             <div class="video-placeholder">
                 <div style="text-align: center;">
                     <i class="fas fa-video"></i>
-                    <p style="color: var(--text-muted); margin: 0;">Video formatý desteklenmiyor</p>
+                    <p style="color: var(--text-muted); margin: 0;">Video formatï¿½ desteklenmiyor</p>
                     <small style="color: var(--text-muted);">Desteklenen: YouTube, Twitch, Vimeo, Streamable, Tixte, Facebook, MP4</small>
                 </div>
             </div>
@@ -641,7 +674,7 @@ function createDirectVideoEmbed(url) {
                 <source src="${encodeURIComponent(safeUrl)}" type="video/mp4">
                 <source src="${encodeURIComponent(safeUrl)}" type="video/webm">
                 <p style="color: white; text-align: center; padding: 20px;">
-                    Tarayýcýnýz bu video formatýný desteklemiyor.
+                    Tarayï¿½cï¿½nï¿½z bu video formatï¿½nï¿½ desteklemiyor.
                 </p>
             </video>
         </body>

@@ -22,6 +22,20 @@
     },
     {
         "id": 5,
+        "icon": "fa-solid fa-earth-americas",
+        "title": "Planet Minecraft",
+        "link": "https://www.planetminecraft.com/member/craftea/",
+        "hoverText": "Bazı Haritalarımızı vs. paylaştığımız site."
+    },
+    {
+        "id": 4,
+        "icon": "fa-solid fa-wrench",
+        "title": "Modrinth",
+        "link": "https://modrinth.com/user/CrafTea",
+        "hoverText": "Aktif olarak tüm minecraft projelerimizi paylaştığımız site."
+    },
+    {
+        "id": 6,
         "icon": "fas fa-envelope",
         "title": "E-posta",
         "link": "mailto:beym75121@gmail.com",
