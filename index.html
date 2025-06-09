@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tpcoffline - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Minecraft+Seven:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%232A2A2A'/><rect x='4' y='4' width='8' height='8' fill='%2355FF55'/><rect x='20' y='4' width='8' height='8' fill='%23FFAA00'/><rect x='4' y='20' width='8' height='8' fill='%235555FF'/><rect x='20' y='20' width='8' height='8' fill='%23FF5555'/><rect x='12' y='12' width='8' height='8' fill='%23AA00AA'/></svg>">
+    <meta name="description" content="Tpcoffline - Minecraft geliştirici portföyü. Datapack, Plugin, Skript ve daha fazlası.">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-img">
+                    <rect width="32" height="32" fill="#2A2A2A"/>
+                    <rect x="4" y="4" width="8" height="8" fill="#55FF55"/>
+                    <rect x="20" y="4" width="8" height="8" fill="#FFAA00"/>
+                    <rect x="4" y="20" width="8" height="8" fill="#5555FF"/>
+                    <rect x="20" y="20" width="8" height="8" fill="#FF5555"/>
+                    <rect x="12" y="12" width="8" height="8" fill="#AA00AA"/>
+                </svg>
+                <span class="logo-text">Tpcoffline</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#anasayfa" class="nav-link">Ana Sayfa</a>
+                <a href="#hakkimda" class="nav-link">Hakkımda</a>
+                <a href="#kuruluslar" class="nav-link">Kuruluşlar</a>
+                <a href="#projeler" class="nav-link">Projeler</a>
+                <a href="#iletisim" class="nav-link">İletişim</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="minecraft-text">Tpcoffline</span>
+                    <span class="subtitle">Developer</span>
+                </h1>
+                <p class="hero-description">
+                    Hobi amaçlı sürekli öğrenen ve gelişmeye çalışan bir geliştirici. 
+                    Genelde minecraft odaklı projeler geliştiririm.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projeler" class="btn btn-primary">
+                        <i class="fas fa-cube"></i>
+                        Projelerimi Gör
+                    </a>
+                    <a href="#iletisim" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        İletişime Geç
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="minecraft-blocks">
+                    <div class="block block-1"></div>
+                    <div class="block block-2"></div>
+                    <div class="block block-3"></div>
+                    <div class="block block-4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-particles" id="particles"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="hakkimda" class="about">
+        <div class="container">
+            <h2 class="section-title">Hakkımda</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Merhaba! Ben Tpcoffline, kendimi geliştirerek yaratıcı projeler ortaya çıkarmaya çalışan bir geliştiriciyim.</p>
+                    <p>Yıllardır hobi amaçlı genelde ücretsiz projeler geliştiriyorum. Asıl bölümüm orman endüstrisi mühendisliği ama yazılımla ilgileniyorum.</p>
+                    <div class="skills">
+                        <span class="skill-tag">Datapack</span>
+                        <span class="skill-tag">Plugin</span>
+                        <span class="skill-tag">Skript</span>
+                        <span class="skill-tag">Resource Pack</span>
+                        <span class="skill-tag">Özel Haritalar</span>
+                        <span class="skill-tag">Mod</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Proje</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">İndirme</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">Yıl Deneyim</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations Section -->
+    <section id="kuruluslar" class="organizations">
+        <div class="container">
+            <h2 class="section-title">Kuruluşlar</h2>
+            <div class="organizations-grid" id="organizationsGrid">
+                <!-- Organizations will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projeler" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projeler (detay için tıklayın)</h2>
+            
+            <!-- Project Categories -->
+            <div class="project-categories">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th"></i>
+                    Tümü
+                </button>
+                <div id="categoryButtons">
+                    <!-- Categories will be loaded from JSON -->
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section id="iletisim" class="contact">
+        <div class="container">
+            <h2 class="section-title">İletişim & Sosyal Medya</h2>
+            <div class="social-links" id="socialLinks">
+                <!-- Social links will be loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span class="footer-logo">Tpcoffline</span>
+                    <p>Developer Portfolio</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2025 Tpcoffline. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Project details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

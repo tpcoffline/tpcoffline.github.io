@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Datapack",
+        "icon": "fas fa-cube"
+    },
+    {
+        "id": 2,
+        "name": "Plugin",
+        "icon": "fas fa-plug"
+    },
+    {
+        "id": 3,
+        "name": "Skript",
+        "icon": "fas fa-code"
+    },
+    {
+        "id": 4,
+        "name": "Resource Pack",
+        "icon": "fas fa-palette"
+    },
+    {
+        "id": 5,
+        "name": "Harita",
+        "icon": "fas fa-map"
+    },
+    {
+        "id": 6,
+        "name": "Mod",
+        "icon": "fas fa-cogs"
+    },
+    {
+        "id": 7,
+        "name": "Araç",
+        "icon": "fas fa-tools"
+    },
+    {
+        "id": 7,
+        "name": "Python",
+        "icon": "fas fa-terminal"
+    },
+    {
+        "id": 7,
+        "name": "Web Sitesi",
+        "icon": "fas fa-globe"
+    },
+    {
+        "id": 7,
+        "name": "Elektrik-Elektronik",
+        "icon": "fas fa-bolt"
+    },
+    {
+        "id": 7,
+        "name": "Mobil Uygulama",
+        "icon": "fas fa-mobile-alt"
+    }
+] 

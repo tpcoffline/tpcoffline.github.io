@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "icon": "fab fa-discord",
+        "title": "Discord",
+        "link": "https://discord.gg/Wmscpmasuu",
+        "hoverText": "Craftea Discord sunucumuzda beni bulabilir ve projeleriniz/projelerimiz hakkında soru sorabilirsiniz"
+    },
+    {
+        "id": 2,
+        "icon": "fab fa-github",
+        "title": "GitHub",
+        "link": "https://github.com/tpcoffline",
+        "hoverText": "Bazı projelerimi (genelde araçlar) buradan inceleyebilirsiniz"
+    },
+    {
+        "id": 3,
+        "icon": "fab fa-youtube",
+        "title": "YouTube",
+        "link": "https://youtube.com/@crafteatr?si=kGe3mM6tOgMpnSxK",
+        "hoverText": "Craftea Eğitim videolarımız ve proje tanıtımlarımız için YouTube kanalımız"
+    },
+    {
+        "id": 5,
+        "icon": "fas fa-envelope",
+        "title": "E-posta",
+        "link": "mailto:beym75121@gmail.com",
+        "hoverText": "Doğrudan iletişim için e-posta adresim"
+    }
+] 

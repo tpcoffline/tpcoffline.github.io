@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "logo": "assets/organizations/craftea.jpg",
+        "title": "CRAFTEA",
+        "detail": "Kurucularından olduğum, minecraft içerikleri üreten; kendi alanında Türkiyede en iyilerden olan üyelerin bulunduğu 9 kişilik bir takım.",
+        "active": true
+    },
+    {
+        "id": 2,
+        "logo": "assets/organizations/minevicecity.png",
+        "title": "Minevice city",
+        "detail": "Hala yapım aşamasında olan bir minecraft vice city sunucusu. Vice city haritasını minecraftta 1:1 ölçekte arkadaşlarınızla oyanyabildiğiniz, meslekler seçebildiğiniz ve gta deneyimi yaşayabileceğiniz eşsiz bir sunucu.",
+        "active": true
+    }
+] 

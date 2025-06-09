@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "title": "Şapka Menüsü",
+        "description": "/şapka yazarak interaktif bir şekilde şapka seçebilmenizi sağlar. Sadece test için yapılmıştır ve paylaşılmaya uygun değildir.",
+        "image": "assets/projects/sapka.png",
+        "categories": ["Datapack","Skript","Plugin"],
+        "tags": ["Kozmetik","Datapack","Plugin","Skript","Test","İnteraktif"],
+        "videoLink": "https://streamable.com/7zs8dv",
+        "details": " Oyuncunun kopyasını oluşturmak için citizens plugini; /şapka yazdığımızda algılaması ve citizens plugini komutlarını çalıştırması için kendi yazdığım skript; mini sinematik, şapkalar, şapka değiştirme gibi kalan özellikler için kendi yaptığım datapacki kullandım.",
+        "version": "1.21.5+",
+        "features": [
+            "/şapka ile menüyü açma",
+            "Sol CTRL tuşu ile şapka değiştirme",
+            "Boşluk tuşu ile şapkayı seçme"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Sayı Dönüştürücü",
+        "description": "Genelde projelerimde kullandığım sayıyı okunabilir hale otomatik dönüştüren kütüphane datapacki.",
+        "image": "assets/projects/sayidonusturucu.png",
+        "categories": ["Datapack","Araç"],
+        "tags": ["Economy", "Money", "Market", "Banking", "Library","Kütüphane","Para"],
+        "downloadLink": "https://modrinth.com/datapack/number-converter",
+        "videoLink": "https://streamable.com/zgrcw9",
+        "details": "Kendi projelerimde kullandığım örneğin bir scoreboard değerini otomatik kolayca okunabilir bir hale getiren basit ama detaylı bir sayı kütüphanesi datapackini herkesle paylaşmak istedim. Örneğin 1874 yazdığınızda basit bir matematikle 1.8k çıktısını verir. Ayrıca detaylı data çıktısı olduğu için sadece suffix (k,m gibi) sadece sayı (1.8) benzeri bilgileride otomatik çekebilirsiniz. Detaylı bilgi için indirme linkindeki modrinth sayfasını ziyaret edebilirsiniz.",
+        "version": "1.21.5+",
+        "downloads": 10,
+        "features": [
+            "Komuta girdiğimiz sayıyı dönüştürme",
+            "Direkt bir skoru dönüştürme",
+            "Detaylı çıktı",
+            "Bin, milyon, trilyon",
+            "Ekstra sadece sayı, sadece prefix, sadece suffix, küsüratsız sayı, sadece küsürat çıktısı"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Minecraft Animasyonlu Yazı Oluşturucu",
+        "description": "Eski sürümler için otomatik olarak animasyonlu yazılar oluşturan bir site.",
+        "image": "assets/projects/texteditor.png",
+        "categories": ["Datapack","Web Sitesi","Araç"],
+        "tags": ["Görsel", "Animasyon", "Yazı", "Generator"],
+        "downloadLink": "https://tpcoffline.github.io/mctexteditor.github.io/",
+        "details": "Yazdığınız yazıyı minecraftta animasyonlu bir şekilde yazan datapacki otomatik oluşturan bir site. Basit ama kullanışlı. Güncellemeye vaktim olmadığı için eski sürümlere uygun ve detaylı özellikleri yok. Yakın zamanda modernleştirilecek ve güncellenecek.",
+        "version": "1.20-1.20.6",
+        "features": [
+            "Kullanımı kolay",
+            "Sade",
+            "Hızlı",
+            "Zaman kazandırır"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Yakında",
+        "description": "Site şu an yapım aşamasında, yakında tüm projelerim eklenecek.."
+    }
+] 
