@@ -55,6 +55,8 @@
     {
         "id": 4,
         "title": "Yakında",
-        "description": "Site şu an yapım aşamasında, yakında tüm projelerim eklenecek.."
+        "description": "Site şu an yapım aşamasında, yakında tüm projelerim eklenecek..",
+        "categories": ["Araç"],
+        "tags": ["Yakında", "Test"]
     }
 ] 

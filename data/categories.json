@@ -35,22 +35,22 @@
         "icon": "fas fa-tools"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Python",
         "icon": "fas fa-terminal"
     },
     {
-        "id": 7,
+        "id": 9,
         "name": "Web Sitesi",
         "icon": "fas fa-globe"
     },
     {
-        "id": 7,
+        "id": 10,
         "name": "Elektrik-Elektronik",
         "icon": "fas fa-bolt"
     },
     {
-        "id": 7,
+        "id": 11,
         "name": "Mobil Uygulama",
         "icon": "fas fa-mobile-alt"
     }
