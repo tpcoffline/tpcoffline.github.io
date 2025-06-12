@@ -12,5 +12,12 @@
         "title": "Minevice city",
         "detail": "Hala yapım aşamasında olan bir minecraft vice city sunucusu. Vice city haritasını minecraftta 1:1 ölçekte arkadaşlarınızla oyanyabildiğiniz, meslekler seçebildiğiniz ve gta deneyimi yaşayabileceğiniz eşsiz bir sunucu.",
         "active": true
+    },
+    {
+        "id": 3,
+        "logo": "assets/organizations/rbc.png",
+        "title": "Real Battles Championship",
+        "detail": "Hala yapım aşamasında olan Türkiye'nin en büyük Youtuber minecraft etkinliği.",
+        "active": true
     }
 ] 
